@@ -484,4 +484,5 @@ table td {
 
 table img {
     width: 100%;
+    border: none;
 }
