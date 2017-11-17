@@ -6,7 +6,7 @@ category: basic
 
 # Wireframes
 
-## [Frontend Starter Kit](https://drive.google.com/open?id=1GhChIdfeL4upCn6nfqFt9JQlzWnAijkk).
+## [Frontend Starter Kit](https://drive.google.com/open?id=1GhChIdfeL4upCn6nfqFt9JQlzWnAijkk)
 
 ## Article
 
