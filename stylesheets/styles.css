@@ -474,14 +474,14 @@ footer {
 
 /* Image tables */
 
-table.images {
+table {
     border: none;
 }
 
-table.images td {
+table td {
     background: transparent;
 }
 
-table.images img {
+table img {
     width: 100%;
 }
