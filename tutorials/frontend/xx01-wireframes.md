@@ -9,11 +9,8 @@ category: basic
 ## Article
 {:.images}
 | ![](/images/frontend/wireframes/Article%20%231.png) | ![](/images/frontend/wireframes/Article%20%232.png) |
-
 | ![](/images/frontend/wireframes/Article%20%233.png) | ![](/images/frontend/wireframes/Article%20%234.png) |
-
 | ![](/images/frontend/wireframes/Article%20%235.png) | ![](/images/frontend/wireframes/Article%20%236.png) |
-
 | ![](/images/frontend/wireframes/Article%20%237.png) | ![](/images/frontend/wireframes/Article%20%238.png) |
 
 ## Blog
