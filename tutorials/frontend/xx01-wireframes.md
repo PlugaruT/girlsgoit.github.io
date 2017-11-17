@@ -7,7 +7,7 @@ category: basic
 # Wireframes
 
 ## Article
-
+{:.images}
 | ![](/images/frontend/wireframes/Article%20%231.png) | ![](/images/frontend/wireframes/Article%20%232.png) |
 
 | ![](/images/frontend/wireframes/Article%20%233.png) | ![](/images/frontend/wireframes/Article%20%234.png) |

@@ -471,3 +471,17 @@ footer {
     padding: 0 0 0 55px;
     text-align: left;
 }
+
+/* Image tables */
+
+table.images {
+    border: none;
+}
+
+table.images td {
+    background: transparent;
+}
+
+table.images img {
+    width: 100%;
+}
