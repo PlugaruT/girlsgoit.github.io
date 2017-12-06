@@ -11,7 +11,7 @@ title: Python Intro
 Un **limbaj de programare** este un mijloc de comunicare cu computerul. El reprezintă un set bine definit de expresii și reguli necesare pentru a formula instrucțiuni pe care ulterior computerul le va procesa. Limbajul de programare dă posibilitate programatorului să specifice în mod exact și amănunțit acțiunile pe care trebuie să le execute calculatorul, în ce ordine și cu ce date. Această specificare constă în scrierea programelor necesare.
 
 #### Ce este Python și de ce l-am ales pentru a-l studia?
-Ce limbaje de programare cunoașteți? Probabil ați auzit de *HTML*, *CSS* sau *Pascal*. Da, ele toate sunt limbaje de programare. Ca și *Python*, de altfel.
+Ce limbaje de programare cunoașteți? Probabil ați auzit de *Pascal*, *Delphi* sau *C/C++*. Da, ele toate sunt limbaje de programare. Ca și *Python*, de altfel.
 
 Dacă există atât de multe limbaje de programare, de ce noi am ales să studiem anume *Python*? Deoarece *Python* este un limbaj de programare:
 
