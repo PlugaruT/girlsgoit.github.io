@@ -1,11 +1,9 @@
-# Wiki pentru GGIT
+# GirlsGoIT Wiki
 
-Lecţiile se pun în folderul `tutorials2016`.
+### Setup
 
-Convenţia de denumire a fişierelor:
-d**x**l**y**-< lesson-name >.md,
-unde `x` = ziua în care are loc lecţia
-şi `y` = numărul lecţiei (după orar).
-
-Exemplu:
-How web works după agendă are loc în a treia (3) zi, prima lecţia => `d3l1-how-web-works.md`
+ 1. Install [Ruby](https://www.ruby-lang.org/)
+ 2. Clone the repo
+ 3. `gem install bundle`
+ 4. `cd` in the project directory and run `bundle install`
+ 5. `bundle exec jekyll serve` to run the project on local machine

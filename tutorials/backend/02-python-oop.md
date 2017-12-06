@@ -14,12 +14,12 @@ Iubești listele din Python așa cum le iubesc eu? :heart_eyes: Atunci te rog s�
 ```python
 numbers = [42, 21, 1, 13, 1, 34, 2, 3, 5, 8]
 
-print numbers[3]
-print numbers[-1]
-print numbers[0:6]
-print numbers[6:]
-print numbers[5:-1]
-print numbers[:3]
+print(numbers[3])
+print(numbers[-1])
+print(numbers[0:6])
+print(numbers[6:])
+print(numbers[5:-1])
+print(numbers[:3])
 ```
 
 Splendid! Te provoc să mai experimentezi cu aceste structuri de date, în timpul liber, după această prezentare.
@@ -73,7 +73,7 @@ După cum am zis mai sus, obiectele au atribute și metode. Metodele sunt de fap
 ```python
 class Animal(object):
     def say(self):
-        print "Hello world!"
+        print("Hello world!")
 ```
 
 NB: Ca să executăm metoda `say()` a unui obiect `a`, vom scrie `a.say()`.
@@ -117,7 +117,7 @@ class Animal(object):
     name = "I don't have a name yet :("
 
     def info(self):
-    	print "My name is %s." % name # Eroare pentru că nu utilizăm self
+    	print("My name is %s." % name) # Eroare pentru că nu utilizăm self
 ```
 
 Încercăm în practică ceea ce am scris:
@@ -128,7 +128,7 @@ class Animal(object):
 >>> a.info() # Testăm metoda noastră
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-    print "My name is %s." % name
+    print("My name is %s." % name)
 NameError: global name 'name' is not defined # Eroare
 >>> a.name # Însă putem accesa atributul name din obiectul nostru!
 'Tobby'
@@ -140,7 +140,7 @@ Totuși, vezi că suntem apți să accesăm atributul `name` al obiectului nostr
 
 ```python
     def info(self):
-        print "My name is %s." % a.name # Incorect!
+        print("My name is %s." % a.name) # Incorect!
 ```
 
 Hai să vedem ce ne-a ieșit:
@@ -170,7 +170,7 @@ Probabil ți-ai dat seama unde vreau să ajung. Exact, înapoi la `self`. Acest 
 
 ```python
     def info(self):
-        print "My name is %s." % self.name
+        print("My name is %s." % self.name)
 ```
 
 Atâta tot, să vedem în practică:
@@ -193,7 +193,7 @@ NB: În repetate rânduri am pomenit că `self` este doar o convenție. În alte
 
 ```python
     def info(my_custom_loved_self):
-        print "My name is %s." % my_custom_loved_self.name
+        print("My name is %s." % my_custom_loved_self.name)
 ```
 
 ```python
@@ -217,7 +217,7 @@ class Animal(object):
     name = "I don't have a name yet :("
 
     def __init__(self):
-        print "A new baby animal was born!"
+        print("A new baby animal was born!")
 ```
 
 Atât de simplu. Hai să testăm:
@@ -234,7 +234,7 @@ Așa cum te-ai așteptat, la crearea unei instanțe noi, metoda `__init__()` a f
 class Animal(object):
     def __init__(self, name):
         self.name = name
-        print "A new baby animal was born!"
+        print("A new baby animal was born!")
 ```
 
 Hai să testăm ce ne-a ieșit, în linia de comandă:
@@ -255,7 +255,7 @@ Perfect! Acum poți crea "constructori" utilizând `__init__`. Și mai știi cum
 
 ```python
     def __del__(self):
-        print "An animal has left :("
+        print("An animal has left :(")
 ```
 
 Exact ca și în cazul constructorului, vom afișa un mesaj descriptiv la ștergerea obiectului. Să vedem rezultatul:
@@ -281,11 +281,11 @@ class Animal(object):
         self.age = age  # In months
 
     def info(self):
-        print "My name is %s!" % self.name
-        print "I am %d months old." % self.age
+        print("My name is %s!" % self.name)
+        print("I am %d months old." % self.age)
 
     def say_hi(self):
-        print "Hello!"
+        print("Hello!")
 ```
 
 Hai să rulăm, să vedem ce ne-a ieșit:
@@ -317,8 +317,8 @@ class Animal(object):
         self.__age = age  # In months
 
     def info(self):
-        print "My name is %s!" % self.__name
-        print "I am %d months old." % self.__age
+        print("My name is %s!" % self.__name)
+        print("I am %d months old." % self.__age)
 ```
 
 Acum, vom putea vedea conținutul la `__name` și `__age` doar prin metoda `info()`, însă nu și direct. Hai să experimentăm:
@@ -370,8 +370,8 @@ class Animal(object):
         self.age = age  # In months
 
     def info(self):
-        print "My name is %s!" % self.name
-        print "I am %d months old." % self.age
+        print("My name is %s!" % self.name)
+        print("I am %d months old." % self.age)
 
 
 class Cat(Animal):
@@ -381,7 +381,7 @@ class Cat(Animal):
         self.has_furr = True
 
     def say(self):
-        print "Meow!"
+        print("Meow!")
 
 ```
 
@@ -408,8 +408,8 @@ class Animal(object):
         self.age = age  # In months
 
     def info(self):
-        print "My name is %s!" % self.name
-        print "I am %d months old." % self.age
+        print("My name is %s!" % self.name)
+        print("I am %d months old." % self.age)
 
 
 class Cat(Animal):
@@ -418,7 +418,7 @@ class Cat(Animal):
         self.has_furr = has_furr
 
     def say(self):
-        print "Meow!"
+        print("Meow!")
 ```
 
 `super()` ne permite să căpătăm access la metoda `__init__()` din superclasă (clasa de la care moștenim). Acum `name` și `age` sunt atributele clasei `Animal` și tot acolo se gestionează și datele de intrare.
@@ -443,7 +443,7 @@ class SphynxCat(Cat):
         super(SphynxCat, self).__init__(name, age, False) # No furr
 
     def say(self):
-        print "Mrrr-Meow!"
+        print("Mrrr-Meow!")
 ```
 
 Iarăși, destul de simplu și intuitiv. Plus la toate, am și rescris metoda `say()`. Let's see it in action:
@@ -471,7 +471,7 @@ class Cat(Animal):
         self.has_furr = has_furr
 
     def say(self):
-        print "Meow-meow!"
+        print("Meow-meow!")
 
 
 class Dog(Animal):
@@ -480,7 +480,7 @@ class Dog(Animal):
         self.medical_response = medical_response
 
     def say(self):
-        print "Woof-woof!"
+        print("Woof-woof!")
 ```
 
 Am implementat aceiași metodă cu efecte diferite. Să vedem rezultatele:
@@ -499,7 +499,7 @@ Lucrează! Isn't that amazing? :heart_eyes: Hai să încercăm să îmbunătăț
 
 ```python
     def say(self):
-        print "Clasa derivată trebuie să implementeze această meodă!"
+        print("Clasa derivată trebuie să implementeze această meodă!")
 ```
 
 Și hai să implementăm clasa `Pig`, fără metoda `say()`:
