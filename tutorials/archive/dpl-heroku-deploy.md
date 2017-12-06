@@ -118,7 +118,7 @@ Pentru a face posibil deployment-ul a mai multe versiuni, iterativ a websiteului
 
 Structura aplicatie voastre trebuie sa arate in felul urmator:
 
-![Structura aplicatiei](project_deploy.png)
+![Structura aplicatiei](/images/www/project_deploy.png)
 
 Astfel pentru a initia repositoria scrim in linia de comanda:
 
