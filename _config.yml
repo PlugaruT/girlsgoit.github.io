@@ -8,5 +8,5 @@ redcarpet:
 
 permalink: pretty
 
-gems:
+plugins:
   - jemoji
